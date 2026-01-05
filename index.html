@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Enrollment Form</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initForm()">
+
+<h2>Student Enrollment Form</h2>
+
+<form id="studentForm" onsubmit="return false;">
+
+    <label>Roll No:</label><br>
+    <input id="rollNo" type="text" onblur="checkRollNo()"><br><br>
+
+    <label>Full Name:</label><br>
+    <input id="fullName" type="text"><br><br>
+
+    <label>Class:</label><br>
+    <input id="studentClass" type="text"><br><br>
+
+    <label>Birth Date:</label><br>
+    <input id="birthDate" type="date"><br><br>
+
+    <label>Address:</label><br>
+    <input id="address" type="text"><br><br>
+
+    <label>Enrollment Date:</label><br>
+    <input id="enrollDate" type="date"><br><br>
+
+    <button type="button" id="saveBtn" onclick="saveStudent()">Save</button>
+    <button type="button" id="updateBtn" onclick="updateStudent()">Update</button>
+    <button type="button" onclick="resetForm()">Reset</button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
